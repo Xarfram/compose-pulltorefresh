@@ -48,7 +48,7 @@ fun Basic(navController: NavController) {
             onRefresh = { refreshing = true },
             indicatorPadding = padding
         ) {
-            Content(padding)
+            Content(padding, refreshing)
         }
     }
 }

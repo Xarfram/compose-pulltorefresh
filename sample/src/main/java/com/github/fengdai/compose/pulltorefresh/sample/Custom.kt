@@ -70,7 +70,7 @@ fun Custom(navController: NavController) {
                 CustomPullToRefreshIndicator(refreshTriggerDistance, state)
             }
         ) {
-            Content(padding)
+            Content(padding, refreshing)
         }
     }
 }
