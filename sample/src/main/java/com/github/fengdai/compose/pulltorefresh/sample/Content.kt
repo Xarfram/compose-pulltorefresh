@@ -33,13 +33,15 @@ import androidx.webkit.WebViewFeature
 
 @RequiresApi(Build.VERSION_CODES.Q)
 @Composable
-fun Content(contentPadding: PaddingValues, refreshing: Boolean, darkMode: Boolean = isSystemInDarkTheme()) {
+fun Content(contentPadding: PaddingValues,
+            refreshing: Boolean,
+            darkMode: Boolean = isSystemInDarkTheme()) {
     LazyColumn(
         modifier = Modifier.fillMaxSize(),
         contentPadding = contentPadding,
         verticalArrangement = Arrangement.spacedBy(10.dp),
     ) {
-        items(1) { index ->
+        items(1) {
             var backEnabled by remember { mutableStateOf(false) }
             var webView: WebView? = null
 
@@ -95,8 +97,4 @@ fun Content(contentPadding: PaddingValues, refreshing: Boolean, darkMode: Boolea
             }
         }
     }
-}
-
-fun supportDarkMode() {
-
 }
