@@ -40,4 +40,5 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.compose.material3)
+    implementation("androidx.webkit:webkit:1.4.0")
 }

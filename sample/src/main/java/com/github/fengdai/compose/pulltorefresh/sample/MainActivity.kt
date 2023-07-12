@@ -22,8 +22,8 @@ class MainActivity : ComponentActivity() {
                 val navController = rememberNavController()
                 NavHost(navController = navController, startDestination = "home") {
                     composable("home") { Home(navController) }
-                    composable("basic") { Basic(navController) }
-                    composable("custom") { Custom(navController) }
+                    //composable("basic") { Basic(navController) }
+                    //composable("custom") { Custom(navController) }
                 }
             }
         }

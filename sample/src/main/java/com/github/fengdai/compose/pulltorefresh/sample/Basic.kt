@@ -1,5 +1,7 @@
 package com.github.fengdai.compose.pulltorefresh.sample
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -20,6 +22,7 @@ import com.github.fengdai.compose.pulltorefresh.PullToRefresh
 import com.github.fengdai.compose.pulltorefresh.rememberPullToRefreshState
 import kotlinx.coroutines.delay
 
+@RequiresApi(Build.VERSION_CODES.Q)
 @Composable
 fun Basic(navController: NavController) {
     Scaffold(
