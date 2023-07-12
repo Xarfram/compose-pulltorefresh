@@ -16,7 +16,7 @@ See the [source code][sample] for more information.
 
 # Download
 
-```groovy
+```groovye
 repositories {
     mavenCentral()
 }
